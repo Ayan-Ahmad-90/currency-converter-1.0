@@ -220,7 +220,7 @@ input[type="number"] {
 
 
 /* Tablet view (up to 1024px width) */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .container, .msg-container {
     width: 80%;
     flex-direction: column;
@@ -236,7 +236,7 @@ input[type="number"] {
     position: static;
     margin-top: 10px;
   }
-}
+} */
 
 /* Mobile view (up to 600px width) */
 /* @media (max-width: 600px) {
