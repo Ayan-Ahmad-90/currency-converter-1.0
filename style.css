@@ -239,7 +239,7 @@ input[type="number"] {
 }
 
 /* Phones (small screens) */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container,
   .msg-container {
     width: 95%;
@@ -267,7 +267,7 @@ input[type="number"] {
 
   #currency {
     position: static;
-    margin: 5px auto;
+    margin: 0 5px;
     font-size: 18px;
   }
 
