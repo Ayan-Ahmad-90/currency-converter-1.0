@@ -224,7 +224,7 @@ input[type="number"] {
     width: 95%;
     flex-direction: column;
     top: 120px;
-    padding: 25px;
+    padding: 20px;
   }
 
   .left-box {
