@@ -218,45 +218,90 @@ input[type="number"] {
   100% { transform: translate(-50%, 0); opacity: 0; }
 }
 
-@media (max-width: 600px) {
-  body {
-    padding: 0.5rem;
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+  .container,
+  .msg-container {
+    width: 80%;
+    flex-direction: column;
+    top: 120px;
   }
 
-  .chat-container {
-    padding: 1rem;
+  .left-box {
     width: 100%;
+    margin-bottom: 1rem;
   }
 
-  .logo {
-    width: 60px;
-    height: 60px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .subheading {
-    font-size: 14px;
-  }
-
-  .chat-box {
-    height: 200px;
-  }
-
-  .input-area input,
-  .input-area button {
-    font-size: 12px;
-  }
-
-  .mode-toggle {
-    width: 50px;
-    height: 28px;
-  }
-
-  .mode-toggle .emoji {
-    font-size: 18px;
+  #currency {
+    position: static;
+    margin-top: 10px;
   }
 }
 
+/* Phones (small screens) */
+@media (max-width: 768px) {
+  .container,
+  .msg-container {
+    width: 95%;
+    flex-direction: column;
+    top: 120px;
+    padding: 15px;
+  }
+
+  .left-box {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #currency {
+    position: static;
+    margin: 5px auto;
+    font-size: 18px;
+  }
+
+  .emoji-coin {
+    font-size: 28px;
+  }
+
+  .animation-box {
+    height: 80px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .select-contain {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .flag-img {
+    width: 25px;
+    height: 18px;
+  }
+
+  #text {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
