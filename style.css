@@ -239,7 +239,7 @@ input[type="number"] {
 }
 
 /* Mobile view (up to 600px width) */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   body {
     padding-top: 7rem;
   }
@@ -288,4 +288,4 @@ input[type="number"] {
     height: 80px;
   }
 }
-
+ */
