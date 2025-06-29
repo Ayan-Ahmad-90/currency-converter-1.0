@@ -218,55 +218,44 @@ input[type="number"] {
   100% { transform: translate(-50%, 0); opacity: 0; }
 }
 
-
-/* Tablet view (up to 1024px width) */
-/* @media (max-width: 1024px) {
-  .container, .msg-container {
-    width: 80%;
+@media (max-width: 768px) {
+  .container,
+  .msg-container {
+    width: 95%;
     flex-direction: column;
-    top: 100px;
-  }
-
-  .left-box {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  #currency {
-    position: static;
-    margin-top: 10px;
-  }
-} */
-
-/* Mobile view (up to 600px width) */
-/* @media (max-width: 600px) {
-  body {
-    padding-top: 7rem;
-  }
-
-  .container, .msg-container {
-    width: 90%;
+    top: 120px;
     padding: 15px;
-    top: 100px;
-  }
-
-  .header {
-    font-size: 1rem;
-    padding: 0.8rem;
   }
 
   .left-box {
     width: 100%;
-    padding: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
   }
 
   input[type="number"] {
     width: 100%;
+    margin-bottom: 15px;
   }
 
   #btn {
     width: 100%;
+    font-size: 16px;
     padding: 10px;
+  }
+
+  #currency {
+    position: static;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .emoji-coin {
+    font-size: 28px;
+  }
+
+  .animation-box {
+    height: 80px;
   }
 
   .footer {
@@ -274,18 +263,24 @@ input[type="number"] {
     padding: 0.8rem;
   }
 
-  #currency {
-    font-size: 18px;
-    position: static;
-    margin-top: 10px;
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 
-  .emoji-coin {
-    font-size: 30px;
+  .select-contain {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
   }
 
-  .animation-box {
-    height: 80px;
+  .flag-img {
+    width: 25px;
+    height: 18px;
+  }
+
+  #text {
+    font-size: 14px;
+    margin: 10px 0;
   }
 }
- */
