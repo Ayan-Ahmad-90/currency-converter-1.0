@@ -1,22 +1,25 @@
-/* Base styles */
-/* ===== Reset and Base ===== */
+/* ============================
+   🌐 Global Reset & Base Styles
+============================= */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #FFE3BB;
   min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 9rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== Header ===== */
+/* ============================
+   🧢 Header
+============================= */
 .header {
   background-color: #C0C9EE;
   color: #333;
@@ -29,20 +32,23 @@ body {
   z-index: 1000;
 }
 
-/* ===== Container ===== */
+/* ============================
+   🧳 Main Container
+============================= */
 .container {
   display: flex;
   flex-direction: row;
   width: 50%;
   padding: 20px;
-  top: 80px;
   position: relative;
   background-color: #C0C9EE;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== Left Box ===== */
+/* ============================
+   📦 Left Box
+============================= */
 .left-box {
   width: 40%;
   padding: 10px;
@@ -54,16 +60,21 @@ body {
   justify-content: center;
 }
 
+/* ============================
+   🏷️ Heading
+============================= */
 h2 {
   text-align: center;
   color: #333;
-  margin-bottom: 20px;
   background-color: #FFE3BB;
   padding: 1rem;
+  margin-bottom: 20px;
   border-radius: 0.5rem;
 }
 
-/* ===== Form ===== */
+/* ============================
+   📝 Form
+============================= */
 form {
   display: flex;
   flex-direction: column;
@@ -72,16 +83,20 @@ form {
 }
 
 input[type="number"] {
-  padding: 10px;
   width: 80%;
   max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
   font-size: 16px;
-  margin-bottom: 20px;
 }
 
+/* ============================
+   🌍 Currency Selection
+============================= */
 .select-contain {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 8px;
@@ -89,21 +104,13 @@ input[type="number"] {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
-  justify-content: center;
 }
 
 .arrow-block {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: 10px;
-}
-
-#text {
-  color: #333;
-  font-size: 16px;
-  margin: 10px 0;
-  text-align: center;
 }
 
 .flag-img {
@@ -113,7 +120,16 @@ input[type="number"] {
   border-radius: 3px;
 }
 
-/* ===== Animation Box ===== */
+#text {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ============================
+   💰 Coin Animation
+============================= */
 .animation-box {
   width: 100%;
   height: 100px;
@@ -126,8 +142,6 @@ input[type="number"] {
   font-size: 40px;
   position: absolute;
   animation: floatCoin 2s ease-out;
-  left: 0;
-  top: 0;
 }
 
 @keyframes floatCoin {
@@ -136,39 +150,62 @@ input[type="number"] {
   100% { transform: translateY(-100px) scale(0.8); opacity: 0; }
 }
 
-/* ===== Currency Message ===== */
+/* ============================
+   💱 Currency Result
+============================= */
 #currency {
   font-size: 20px;
-  color: rgb(87, 15, 37);
+  color: #571f25;
   font-weight: bold;
   text-align: center;
   margin-bottom: 15px;
 }
 
-/* ===== Button ===== */
+/* ============================
+   🔘 Button
+============================= */
 #btn {
   background-color: #a01010;
   color: white;
+  width: 100%;
   padding: 10px 20px;
   border: none;
-  width: 100%;
   border-radius: 5px;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
   margin-bottom: 10px;
 }
 
-/* ===== Message Container ===== */
+/* ============================
+   💬 Message Container
+============================= */
 .msg-container {
   background-color: #C0C9EE;
   padding: 20px;
   width: 50%;
   border-radius: 1rem;
   margin-top: 20px;
-  position: relative;
 }
 
-/* ===== Footer ===== */
+/* ============================
+   ⚙️ Loading Spinner
+============================= */
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #5892ac;
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================
+   📩 Footer
+============================= */
 .footer {
   background-color: #C0C9EE;
   color: white;
@@ -178,24 +215,9 @@ input[type="number"] {
   width: 100%;
 }
 
-/* ===== Spinner (Optional) ===== */
-.spinner {
-  border: 4px solid #5892ac;
-  border-top: 4px solid #333;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  animation: spin 3s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* =============================
-   ✅ Responsive: Tablet View
-   ============================= */
+/* ============================
+   📱 Responsive: Tablet
+============================= */
 @media (max-width: 1024px) {
   .container,
   .msg-container {
@@ -207,35 +229,27 @@ input[type="number"] {
     width: 100%;
     margin-bottom: 1rem;
   }
-
-  #currency {
-    position: static;
-    margin-top: 10px;
-  }
 }
 
-/* =============================
-   ✅ Responsive: Mobile View
-   ============================= */
+/* ============================
+   📱 Responsive: Mobile
+============================= */
 @media (max-width: 600px) {
   body {
     padding-top: 6rem;
-    flex-direction: column;
-    align-items: center;
   }
 
   .container {
     flex-direction: column;
     width: 95%;
     padding: 10px;
-    position: static;
     margin: auto;
   }
 
   .left-box {
     width: 100%;
-    margin-bottom: 20px;
     padding: 15px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
@@ -244,15 +258,9 @@ input[type="number"] {
     margin-bottom: 1rem;
   }
 
-  form {
-    width: 100%;
-    text-align: center;
-  }
-
   input[type="number"] {
     width: 100%;
     font-size: 16px;
-    padding: 10px;
     margin-bottom: 15px;
   }
 
@@ -270,20 +278,15 @@ input[type="number"] {
 
   #text {
     font-size: 14px;
-    margin: 5px 0;
-    text-align: center;
   }
 
   #currency {
     font-size: 16px;
     color: #870d2a;
     margin-bottom: 10px;
-    text-align: center;
-    position: static;
   }
 
   #btn {
-    width: 100%;
     font-size: 16px;
     padding: 12px;
     margin-top: 5px;
@@ -291,21 +294,12 @@ input[type="number"] {
 
   .msg-container {
     width: 100%;
-    margin-top: 10px;
     padding: 15px;
-    border-radius: 1rem;
-    background-color: #C0C9EE;
-    position: static;
+    margin-top: 10px;
   }
 
   .footer {
     font-size: 0.9rem;
-    padding: 1rem;
-    position: static;
     margin-top: 30px;
-    text-align: center;
-    background-color: #C0C9EE;
-    color: white;
-    width: 100%;
   }
 }
