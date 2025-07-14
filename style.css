@@ -120,31 +120,28 @@ input[type="number"] {
 ===================== */
 .select-contain {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
-  padding: 10px;
+  gap: 10px;
+  padding: 6px 10px;
   background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 300px;
-  flex-wrap: wrap;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  width: fit-content;
 }
 
 .select-contain select {
-  padding: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-size: 14px;
-  min-width: 100px;
+  min-width: auto;
 }
 
 .flag-img {
-  width: 30px;
-  height: 20px;
+  width: 24px;
+  height: 16px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -187,6 +184,21 @@ input[type="number"] {
 }
 
 /* =====================
+   📩 Message Container
+===================== */
+.msg-container {
+  background-color: #DDE6ED;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+  transition: background-color 0.4s ease;
+}
+
+/* =====================
    📩 Footer
 ===================== */
 .footer {
@@ -224,10 +236,16 @@ input[type="number"] {
 
   .select-contain {
     flex-direction: column;
+    align-items: center;
   }
 
   .select-contain select {
     width: 100%;
+  }
+
+  .msg-container {
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -244,7 +262,8 @@ body.dark-mode .header {
   color: #EEE;
 }
 
-body.dark-mode .container {
+body.dark-mode .container,
+body.dark-mode .msg-container {
   background-color: #2D2D30;
   box-shadow: none;
 }
